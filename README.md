@@ -4,7 +4,7 @@ Code and materials accompanying my MSc thesis *"Asynchronous Event-Based Visual-
 > **(Perhaps)The first full event-based visual-inertial odometry (EVIO) pipeline running entirely on-board a small, high-frequency flapping-wing MAV.** Within a ~21 g sensing-and-compute payload, the on-board estimate is accurate enough to close a position-control loop and hold a stationary hover.
 
 <p align="center">
-  <a href="https://github.com/TijnVennink/onboard-evio-fwmav/releases/latest/download/60s_hover.mp4"><img src="media/hover.gif" width="520" alt="On-board hover flight (click for full video)"></a>
+  <a href="media/60s_hover.mp4"><img src="media/hover.gif" width="520" alt="On-board hover flight (click for full video)"></a>
   <br><em>On-board closed-loop hover — click for the full 60&nbsp;s video.</em>
 </p>
 
@@ -20,7 +20,7 @@ The front-end deliberately avoids short-window alignment and instead exploits th
 ## System overview
 
 <p align="center">
-  <img src="media/front_page.png" width="780" alt="System overview: Flapper Nimble+ FWMAV, the 21 g event-camera + OpenMV N6 payload, and the on-board pipeline from asynchronous events to a 6-DOF state estimate">
+  <img src="media/fig0_frontpage_strip.png" width="820" alt="System overview: Flapper Nimble+ FWMAV, the 21 g event-camera + OpenMV N6 payload, and the on-board pipeline from asynchronous events to a 6-DOF state estimate">
 </p>
 
 The Flapper Nimble+ FWMAV carries a ~21 g sensing-and-compute payload (GenX320 event camera + OpenMV N6 microcontroller). The on-board pipeline turns the asynchronous event stream into a 6-DOF state estimate: **(1)** asynchronous event stream → **(2)** feature detection & clustering → **(3)** feature tracks → **(4)** EKF back-end fusing tracks + IMU → **(5)** 6-DOF state estimate.
@@ -31,9 +31,9 @@ The Flapper Nimble+ FWMAV carries a ~21 g sensing-and-compute payload (GenX320 e
 
 **On-board 60-second hover (closed-loop flight test)** — click the image to play
 
-[![On-board hover flight test](media/features%2Bdrone.jpg)](https://github.com/TijnVennink/onboard-evio-fwmav/releases/latest/download/60s_hover.mp4)
+[![On-board hover flight test](media/features%2Bdrone.jpg)](media/60s_hover.mp4)
 
-_Full video: [download from the latest release](https://github.com/TijnVennink/onboard-evio-fwmav/releases/latest/download/60s_hover.mp4) — the 60&nbsp;s hover is distributed as a release asset (`60s_hover.mp4`) to keep the repo light._
+_Full video: [`media/60s_hover.mp4`](media/60s_hover.mp4) — opens the on-board 60&nbsp;s hover in GitHub's video player._
 
 **Corner features tracked by the front-end** — paper markers on the arena wall provide the corners the pipeline detects and tracks
 

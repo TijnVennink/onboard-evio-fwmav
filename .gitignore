@@ -51,11 +51,12 @@ media/*.pdf
 
 
 # Curated files reference
+!media/60s_hover.mp4
 !media/hover.gif
 !media/trajectory.gif
 !media/flight_gt_estimate_rerun_tracked_features_image_frame.webm
 !media/features.jpg
 !media/features+drone.jpg
-!media/front_page.png
+!media/fig0_frontpage_strip.png
 !media/fig2_frontend_wide.png
 !media/fig3_ekf.png
