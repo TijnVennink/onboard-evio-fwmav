@@ -60,3 +60,6 @@ media/*.pdf
 !media/fig0_frontpage_strip.png
 !media/fig2_frontend_wide.png
 !media/fig3_ekf.png
+
+
+tmp/

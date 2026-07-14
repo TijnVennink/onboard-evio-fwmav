@@ -94,6 +94,9 @@ This repository will consolidate the thesis code:
 
 ---
 
+## Disclaimer
+Several pieces of code inside this repository might not be described in the paper, these are often marked as work in progress(some work some don't) and therefore not covered in the paper. Such as robocentric feature anchoring, flow measurements, different depth initialisations and Hubert gating.
+
 ## Msc Thesis Paper
 - **Title:** Asynchronous Event-Based Visual-Inertial Odometry for Flapping-Wing MAVs
 - **Keywords:** Visual-Inertial Odometry · Event-Based Cameras · Flapping-Wing Micro Air Vehicles · State Estimation · Extended Kalman Filter
